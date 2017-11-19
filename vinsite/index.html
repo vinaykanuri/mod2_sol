@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale = 1">
+<title> Vin Assignment Responsive Layout</title>
+<style>
+body{
+            margin:0px;
+            padding:0px;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+ 
+h1 {
+   margin-bottom:15px;
+   text-align:center;
+}
+ 
+p {
+  font-family: Helvatica;
+}
+.container{
+            width:90%;
+            margin:auto;
+}
+.display_table{
+            width:100%;
+}
+.display_tableCell{
+            display:inline-block;
+            width:30%;
+            border:2px solid #333;
+            background:#ccc;
+            min-height: 150px;
+}
+.display_tableCell p{
+            padding:15px;
+            margin:0px;
+}
+.middle_div{
+            margin:0px 30px;
+}
+.title{
+            border:2px solid #333;
+            border-top:0px solid #333;
+            border-right:0px solid #333;
+            width:150px;
+            padding:5px 10px;
+            float:right;
+}
+.orange{
+            background:#ffc967;
+}
+.red{
+            background:#ea5858;
+}
+.yellow{
+            background:#f9f9b1;
+}
+ 
+@media (max-width:1023px) {
+            .display_tableCell{
+                        width:47%;
+                        margin-bottom:15px;
+                        display:inline-block;
+            }
+            .div_tablet{
+                        width:100%;
+                        display:block;
+            }
+            .middle_div{
+                        margin:0px;
+                        margin-bottom:15px;
+                        margin-left: 5%;
+            }
+}
+@media (max-width:467px)  {
+            .display_tableCell{
+                        width:100%;
+                        margin-bottom:15px;
+            }
+            .middle_div{
+                        margin:0px;
+                        margin-bottom:15px;
+            }
+}
+</style>
+</head>
+            <body>
+            <div class="container">
+                        <h1>Our Menu</h1>
+                        <div class="display_table">
+                        <div class="display_tableCell">
+                                   <div class="title orange">Chicken</div>
+                                   <div style="clear:both"></div>
+                                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        </div>
+                        <div class="display_tableCell middle_div">
+                                   <div class="title red">Beef</div>
+                                   <div style="clear:both"></div>
+                                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        </div>
+                        <div class="display_tableCell div_tablet">
+                                   <div class="title yellow">Sushi</div>
+                                   <div style="clear:both"></div>
+                                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        </div>
+                        </div>
+            </div>
+            </body>
+</html>
